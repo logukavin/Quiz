@@ -22,12 +22,17 @@ appcompat = "1.6.1"
 material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
+ksp = "1.9.24-1.0.20"
 
 # Lifecycle
 lifecyclecommon="1.1.1"
 lifecyclelivedata="2.7.0"
 lifecycleviewmodel="2.7.0"
 lifecycleruntime="2.7.0"
+
+# Room components
+room="2.5.2"
+roomcompiler="2.4.0-alpha05"
 
 # Coroutines
 coroutines = "1.8.0"
@@ -40,6 +45,9 @@ gson = "2.10.1"
 
 # Coil
 coil = "2.5.0"
+
+# Datastore
+datastore = "1.1.0-alpha05"
 
 
 
@@ -54,11 +62,17 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+
 # Lifecycle
 lifecycle-common = { module = "android.arch.lifecycle:common-java8", version.ref = "lifecyclecommon" }
 lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecyclelivedata" }
 lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleviewmodel" }
 lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleruntime" }
+
+# Room
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomcompiler" }
 
 # Coroutines
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
@@ -74,6 +88,9 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 # Coil
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 
+# Datastore
+datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
 
 
 [plugins]
@@ -81,6 +98,7 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 
 

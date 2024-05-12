@@ -13,7 +13,7 @@ import javax.inject.Inject
 class DataRepository @Inject constructor()  {
 
     /**
-     * This API returns movie in realtime using which stats can be computed
+     * This API returns Quiz in realtime using which stats can be computed
      */
     suspend fun getQuiz(mContext: QuizsActivity): Flow<QuizResponse>  {
         return flow {
